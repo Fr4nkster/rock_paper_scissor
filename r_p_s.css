@@ -1,0 +1,23 @@
+
+header {
+    font-family: 'Verdana';
+    text-align: center ;
+    font-size: 40px;
+    font-weight: 200;
+}
+body {
+    text-align: center;
+}
+
+/*.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-self: center;
+    align-items: center;
+    column-gap: 30px;
+    */
+
+.img {
+    float: left;
+
+}
