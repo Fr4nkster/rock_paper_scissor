@@ -1,18 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Test HTML</title>
-    <link href="Test.css"/>
-</head>
-<header> Rock Scissor Paper</header>
 
+<!doctype html>
+<html>
+<head>  
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./Test.css"/>
+</head>
+
+    <header> 
+<h1 class="title"> Wanna play a game</h1>
+</header>
 <body>
-<button id="rock" title="Rock"> ROCK</button>
-<button id="paper" title="Paper">PAPER</button>
-<button id="scissor" title="Scissor">SCISSOR</button>
-<div id= "player result" > Player Result: </div>
-<div id="computer result"> Computer Result: </div>
+
+<div class="Score-Board">
+    <div id="user-label" class= 'badge'> User</div> 
+    <div id= "computer-label" class= 'badge'>Comp </div>
+    <span id = 'userscore'>0</span> : <span id = 'computersore'>0</span> 
+
+</div>
+
+
+<div class="result"> <p> Paper cover rock, you win!</p> </div>
+
+<div class= choices> 
+
+<div class= 'choice' id=r> <img src="image/rock.png" alt=""> </div>
+<div class= 'choice'id=s> <img src="image/scissor.png" alt=""> </div>
+<div class= 'choice'id=p> <img src="image/paper.png" alt=""></div>
+</div>
+</div>
+
+<p id= 'action-message'> lets make your move </p>
+
 <script src="Test.js"></script>
 </body>
+
+
 </html>
