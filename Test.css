@@ -17,6 +17,7 @@ header {
     padding: 20;  
 } 
 
+
 header > h1 {
 
     color: #25272E; 
@@ -65,7 +66,7 @@ header > h1 {
     text-align: center;
 }
 .choices { 
-    margin: 50px 0; 
+    margin-top: 50px 0; 
     text-align: center;
     
 }
@@ -84,8 +85,31 @@ header > h1 {
 
 }
 
-p { 
+#action-message 
+ { 
     text-align: center;
     color: white; 
     font-family: Asap, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px; 
+    
+}
+
+.green-glow { 
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a; 
+    transition: 0.3s;
+}
+
+.red-glow { 
+    border: 4px solid #fc121b; 
+    box-shadow: 0 0 10px #d01115; 
+    transition: 0.3s; 
+}
+
+.gray-glow { 
+    border: 4px solid #464647; 
+    box-shadow: 0 0 10px #25292b;
+    transition: 0.3s; 
 }
