@@ -2,8 +2,12 @@
 // Library book example
 let  userScore = 0; 
 let computerScore = 0; 
+let finalComputerScore = 0; 
+let finalUserScore = 0;
 let userScore_span = document.getElementById("user-score"); 
 let computerScore_span = document.getElementById('computer-score'); 
+let finalUserResult_span = document.getElementById('finalUserResult'); 
+let finalComputerResult_span = document.getElementById('finalComputerResult');
 const scoreBoard_div = document.querySelector('.score-board');
 const result_p = document.querySelector('.result > p'); 
 const rock_div = document.getElementById("r");
@@ -70,10 +74,19 @@ function game(userChoice) {
         case 'ss': 
         draw(userChoice,computerChoice); 
     break
+        
     
     }
 }
+function finalScore1 ( userScore, computerScore) { 
+    for ( i = 0; i >=5; i++ ) { 
+        if (userScore >= 5 ) { 
+            finalUserScore ++; 
+            finalUserResult_span.innerHTML = finalUserScore; 
+        }
 
+    }
+}
 
 // put an on Click Event at the button and print result in console
 
@@ -88,7 +101,21 @@ scissor_div.addEventListener('click', function() {
 
 paper_div.addEventListener('click', function() {
     game('p')
-})
-} 
-main();
-
+}) 
+   
+}
+// function finalScore2(userScore,computerScore) { 
+    
+  //  if (userScore_span ==  5) { 
+  //      finalUserScore ++; 
+  //      finalUserResult_span.innerHTML = finalUserScore; 
+  //      console.log('+1')
+  //  } else if (computerScore- == 5) { 
+  //      finalComputerResult_span ++; 
+  //  } else 
+  //    return 'start again'; 
+  //  }
+//
+  //  finalScore2();
+  finalScore1(); 
+ main();
