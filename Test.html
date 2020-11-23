@@ -1,41 +1,42 @@
-
 <!doctype html>
 <html>
-<head>  
+<head>
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./Test.css"/>
 </head>
 
-    <header> 
-<h1 class="title"> Wanna play a game</h1>
+<header>
+    <h1 class="title"> Wanna play a game</h1>
 </header>
 <body>
 
 <div class="Score-Board">
-    <div id="user-label" class= 'badge'> User</div> 
-    <div id= "computer-label" class= 'badge'>Comp </div>
-    <span id = 'user-score'>0</span> : <span id = 'computer-score'>0</span> 
+    <div id="user-label" class='badge'> User</div>
+    <div id="computer-label" class='badge'>Comp</div>
+    <span id='user-score'>0</span> : <span id='computer-score'>0</span>
 
 </div>
 
 
-<div class="result"> <p> European Rock Scissor Paper Championship</p> </div>
+<div class="result"><p> European Rock Scissor Paper Championship</p></div>
 
-<div class= choices> 
+<div class=choices>
 
-<div class= 'choice' id=r> <img src="image/rock.png" alt=""> </div>
-<div class= 'choice'id=s> <img src="image/scissor.png" alt=""> </div>
-<div class= 'choice'id=p> <img src="image/paper.png" alt=""></div>
+    <div class='choice' id=r><img src="image/rock.png" alt=""></div>
+    <div class='choice' id=s><img src="image/scissor.png" alt=""></div>
+    <div class='choice' id=p><img src="image/paper.png" alt=""></div>
 </div>
 </div>
-<p id= 'action-message'> lets make your move </p>
-<button id = 'gambler'> Double Trouble  </button>
-<div class = 'final-score'> 
-    <span id = 'finalUserResult'> 0 </span> : <span id= 'finalComputerResult'> 0 </span>
-  <div id = 'finalUser-score' class= 'badge'> User </div>
-  <div id = 'finalComputer-score' class = 'badge'> comp</div> 
+<p id='action-message'> lets make your move </p>
+<div class = 'fun-Buttons'>
+    <button onclick="reset()" id='reset'> Lets play again</button>
+    <button onclick="double()" id='double'> Double Trouble</button>
 </div>
-<button id = 'play-again' > Lets play again </button>
+<div class='final-score'>
+    <span id='finalUserResult'> 0 </span> : <span id='finalComputerResult'> 0 </span>
+    <div id='finalUser-score' class='badge'> User</div>
+    <div id='finalComputer-score' class='badge'> comp</div>
+</div>
 
 <script src="Test.js"></script>
 </body>
