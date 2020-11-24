@@ -17,7 +17,6 @@ const scissor_div = document.getElementById('s');
 const paper_div = document.getElementById('p');
 
 
-
 function getComputerChoice() {
     const choices = ['r', 's', 'p'];
     const randomNumber = Math.floor(Math.random() * 3);
@@ -63,16 +62,16 @@ function draw(userSelection,) {
 
 }
 
-function double() {
-    if () {
-        userScore = +1 ;
-        userScore_span.innerHTML = userScore;
-    } else (looses());
-    {
-        computerScore = +1 ;
-        computerScore_span.innerHTML = computerScore;
-    }
-}
+// function double() {
+//     if () {
+//         userScore = +1;
+//         userScore_span.innerHTML = userScore;
+//     } else (looses());
+//     {
+//         computerScore = +1;
+//         computerScore_span.innerHTML = computerScore;
+//     }
+// }
 
 function game(userChoice) {
     const computerChoice = getComputerChoice();
@@ -95,16 +94,19 @@ function game(userChoice) {
 
 
     }
-    if (userScore && computerScore >= 5 ) {
-        finalScore1()
-    }
+   function finalScore() {
+        if (userScore + computerScore > 5) {
+            rock_div.disable = true;
+            paper_div.disable= true;
+            scissor_div.disable=true;
+            return(alert("end of game, play again"));
+        }
+   }
+finalScore()
 
 }
 
-function finalScore1() {
-    return
 
-}
 
 function reset() {
     userScore = 0;
@@ -114,8 +116,6 @@ function reset() {
     computerScore_span.innerHTML = computerScore;
 
 }
-
-
 
 
 // put an on Click Event at the button and print result in console
@@ -133,30 +133,17 @@ function main() {
         game('p')
     })
 
-    function finalScoreBoard () {
-        if (userScore == 3 ) {
-            finalUserScore ++;
-            finalUserResult_span.innerHTML = finalUserScore;
-        } else (computerScore == 3); {
-            finalComputerScore ++;
-            finalComputerResult_span.innerHTML = finalComputerScore;
-        }
+   // function finalScoreBoard() {
+   //     if (userScore == 3) {
+   //         finalUserScore++;
+   //         finalUserResult_span.innerHTML = finalUserScore;
+   //     } else (computerScore == 3);
+   //     {
+   //         finalComputerScore++;
+   //         finalComputerResult_span.innerHTML = finalComputerScore;
+   //     }
+   // }
+   // finalScoreBoard();
+   //
     }
-    finalScoreBoard();
-}
-
-// function finalScore2(userScore,computerScore) {
-
-//  if (userScore_span ==  5) {
-//      finalUserScore ++;
-//      finalUserResult_span.innerHTML = finalUserScore;
-//      console.log('+1')
-//  } else if (computerScore- == 5) {
-//      finalComputerResult_span ++;
-//  } else
-//    return 'start again';
-//  }
-//
-//  finalScore2();
-
 main();
